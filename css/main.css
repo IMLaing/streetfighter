@@ -51,3 +51,10 @@ body {
     z-index: 10;
 }
 
+.textHide  {
+	font-size: 2em;
+	position: absolute;
+	display: block;
+	text-align: right;
+	margin-left: 520px;
+}
