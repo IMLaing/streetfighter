@@ -37,8 +37,8 @@ $(document).ready(function() {
 
 
 $(document).keydown(function(e){
-  if(e.which = 88) {
-    ryuHide.hide();
+  if (e.which == 88) {
+  ryuHide.hide();
   $('.ryuCool').show();
 };
 });
