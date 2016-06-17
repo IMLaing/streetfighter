@@ -1,7 +1,8 @@
-$(document).ready(function() {
-  var ryuHide = $('.ryuStill, .ryuReady, .ryuThrow, .textHide');
+var ryuHide = $('.ryuStill, .ryuReady, .ryuThrow, .textHide, .ryuCool');
 
-   $('.ryu').mouseenter(function(){
+
+$(document).ready(function() {
+     $('.ryu').mouseenter(function(){
        ryuHide.hide();
        $('.ryuReady').show();
    })
@@ -33,3 +34,15 @@ $(document).ready(function() {
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
 };
+
+
+$(document).keydown(function(e){
+  if(e.which = 88) {
+    ryuHide.hide();
+  $('.ryuCool').show();
+};
+});
+$(document).keyup(function(e){
+  $('.ryuCool').hide();
+  $('.ryuStill').show();
+});
