@@ -16,16 +16,19 @@ body {
 	width: 659px;
 }
 
-/*{
-	background-image: url('../images/ryu-standing-still.png');
+.ryuRev {
+	float:right;
+	height: 494px;
+	width: 659px;
 	-moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	filter: FlipH;
-	z-index: 12;
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
 
-}*/
+
 
 .ryuStill, .ryuReady, .ryuThrow, .ryuCool {
 	height: 494px;

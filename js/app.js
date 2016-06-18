@@ -2,7 +2,7 @@ var ryuHide = $('.ryuStill, .ryuReady, .ryuThrow, .textHide, .ryuCool');
 
 
 $(document).ready(function() {
-     $('.ryu').mouseenter(function(){
+     $('.ryu,.ryuRev').mouseenter(function(){
        ryuHide.hide();
        $('.ryuReady').show();
    })
@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     });
     
-    $('.ryu').mousedown(function(){
+    $('.ryu, .ryuRev').mousedown(function(){
         playHadouken(); 
         ryuHide.hide();
         $('.ryuThrow').show();
